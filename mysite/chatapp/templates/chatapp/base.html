@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="shadow-lg px-3 py-2.5 position-fixed">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a class="flex items-center" href="">
+                <img class="h-9 mr-3" src="https://cdn4.iconfinder.com/data/icons/business-and-finance-colorful-free-hand-drawn-set/100/message_open-512.png" alt="">
+                <span class="self-center text-2xl font-semibold">Chat App</span>
+            </a>
+    
+            <ul class="flex items-center space-x-4 "> 
+                <li>
+                    <a class="block py-2 pl-3 pr-4 rounded bg-blue-700 text-white" href="">Rooms</a>
+                </li>
+                <li>
+                    <a class="block py-2 pl-3 pr-4 rounded bg-blue-700 text-white" href="">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
